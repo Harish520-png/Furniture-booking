@@ -1,0 +1,47 @@
+[
+   {
+      "@id": "01",
+      "name": "harish",
+      "age": "19",
+      "gender": "male",
+      "address": "abc",
+      "phone": "9790439854",
+      "furnituredetails": {
+         "fid": "f12345",
+         "from": "chennai",
+         "to": "madurai",
+         "amount": "2800",
+         "date": "20.11.2020"
+      }
+   },
+   {
+      "@id": "02",
+      "name": "dhuvarak",
+      "age": "20",
+      "gender": "male",
+      "address": "yyy",
+      "phone": "9095459396",
+      "furnituredetails": {
+         "fid": "f12345",
+         "from": "chennai",
+         "to": "madurai",
+         "amount": "2500",
+         "date": "20.11.2020"
+      }
+   },
+   {
+      "@id": "03",
+      "name": "subash",
+      "age": "20",
+      "gender": "male",
+      "address": "zzz",
+      "phone": "7010869523",
+      "furnituredetails": {
+         "fid": "f12345",
+         "from": "chennai",
+         "to": "coimbatore",
+         "amount": "2800",
+         "date": "20.11.2020"
+      }
+   }
+]

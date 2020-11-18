@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="furniture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fid"/>
+        <xs:element ref="fcname"/>
+        <xs:element ref="type"/>
+        <xs:element maxOccurs="unbounded" ref="payment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fid" type="xs:NCName"/>
+  <xs:element name="fcname" type="xs:NCName"/>
+  <xs:element name="type" type="xs:NCName"/>
+  <xs:element name="payment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="date"/>
+        <xs:element ref="from"/>
+        <xs:element ref="to"/>
+        <xs:element ref="availability"/>
+      </xs:sequence>
+      <xs:attribute name="category" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date" type="xs:NMTOKEN"/>
+  <xs:element name="from" type="xs:NCName"/>
+  <xs:element name="to" type="xs:NCName"/>
+  <xs:element name="availability" type="xs:integer"/>
+</xs:schema>

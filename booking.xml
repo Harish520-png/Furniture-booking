@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<furniture>
+    <fid>f12345</fid>
+    <fcname>aaa</fcname>
+    <type>Business</type>
+    <payment category="cod">
+        <date>20.11.2020</date>
+        <from>chennai</from>
+        <to>madurai</to>
+        <availability>10</availability>
+    </payment>
+    <payment category="credit card">
+        <date>20.11.2020</date>
+        <from>chennai</from>
+        <to>madurai</to>
+        <availability>25</availability>
+    </payment>
+    <payment category="net banking">
+        <date>20.11.2020</date>
+        <from>chennai</from>
+        <to>coimbatore</to>
+        <availability>30</availability>
+    </payment>
+</furniture>

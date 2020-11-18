@@ -1,0 +1,28 @@
+{
+   "fid": "f12345",
+   "fcname": "aaa",
+   "type": "Business",
+   "payment": [
+      {
+         "@category": "cod",
+         "date": "20.11.2020",
+         "from": "chennai",
+         "to": "madurai",
+         "availability": "10"
+      },
+      {
+         "@category": "credit card",
+         "date": "20.11.2020",
+         "from": "chennai",
+         "to": "madurai",
+         "availability": "25"
+      },
+      {
+         "@category": "net banking",
+         "date": "20.11.2020",
+         "from": "chennai",
+         "to": "coimbatore",
+         "availability": "30"
+      }
+   ]
+}

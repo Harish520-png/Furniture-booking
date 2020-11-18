@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 2px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px;
+}
+body {
+  font-family:"Arial Black", cursive, sans-serif;
+  background-color:#blue ;
+}
+img {
+  border: 5px solid black;
+}
+
+h2{
+  color:BLACK;
+  font-family: "MSLucida Sans Unicode", Gadget, sans-serif
+}
+
+h3{
+  color:BLACK;
+  font-family: "Comic Sans", "Lucida Grande", sans-serif;
+}
+</style>
+<body>
+<center><h2>FEEL THE COMFORT</h2></center>
+<h3>ONLINE FURNITURE BOOKING</h3>
+
+<button type="button" onclick="loadXMLDoc()">BOOK FURNITURES</button>
+<br><br>
+<table id="demo"></table>
+<br>
+<img src="https://designbump.com/wp-content/uploads/2015/08/Living-Room-Furniture.jpg" alt="FURNITURE" width="300" height="200">
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "customer.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>name</th><th>age</th><th>gender</th><th>address</th><th>phone</th></tr>";
+  var x = xmlDoc.getElementsByTagName("info");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("age")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("gender")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("phone")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    </tr>";
+    
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+<br>
+<br><br>
+<center><a href="index.html"><button style="background-color:LIGHTGREEN;color:black;width:10%; height:70px;" ><h2>HOME</h2></button></a> <!-- Button link --></center>
+</body>
+</html>

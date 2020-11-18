@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<details>
+    <info id="01">
+        <name>harish</name>
+        <age>19</age>
+        <gender>male</gender>
+        <address>abc</address>
+        <phone>9790439854</phone>
+        <furnituredetails>
+            <fid>f12345</fid>
+            <from>chennai</from>
+            <to>madurai</to>
+            <amount>2800</amount>
+            <date>20.11.2020</date>
+        </furnituredetails>
+    </info>
+    <info id="02">
+        <name>dhuvarak</name>
+        <age>20</age>
+        <gender>male</gender>
+        <address>yyy</address>
+        <phone>9095459396</phone>
+        <furnituredetails>
+            <fid>f12345</fid>
+            <from>chennai</from>
+            <to>madurai</to>
+            <amount>2500</amount>
+            <date>20.11.2020</date>
+        </furnituredetails>
+    </info>
+    <info id="03">
+        <name>subash</name>
+        <age>20</age>
+        <gender>male</gender>
+        <address>zzz</address>
+        <phone>7010869523</phone>
+        <furnituredetails>
+            <fid>f12345</fid>
+            <from>chennai</from>
+            <to>coimbatore</to>
+            <amount>2800</amount>
+            <date>20.11.2020</date>
+        </furnituredetails>
+    </info>
+</details>
